@@ -1,0 +1,54 @@
+[{
+  "_id": {
+    "$oid": "676be1ac06636e03d8ec5dec"
+  },
+  "adminId": "ADM-2303",
+  "fname": "Lakshit",
+  "lname": "Verma",
+  "email": "lakshitverma98@gmail.com",
+  "phone": "8154844545",
+  "password": "$2b$10$rNcPxlLqq9pDrEZxJo89Te2xbIntQ.kLgfmSxnqWFjsdZyb.ixAS.",
+  "createdAt": {
+    "$date": "2024-12-25T10:42:52.263Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-25T10:42:52.263Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "677ca8b1cd2ac33f0dcffe66"
+  },
+  "adminId": "ADM-2005",
+  "fname": "Ayush",
+  "lname": "Fataniya",
+  "email": "ayushfataniya2005@gmail.com",
+  "phone": "8460794821",
+  "password": "$2b$10$GyL/35f7FTZqcuVwJCBXLu4qY4Ja.z7rIeBNA/MXKsrJVKqwXAydm",
+  "createdAt": {
+    "$date": "2025-01-07T04:08:17.112Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-07T04:08:17.112Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67ca80e7bd35c19e62c88bad"
+  },
+  "adminId": "ADM-1083",
+  "fname": "prahlad",
+  "lname": "vishwakarma",
+  "email": "prahlad@gmail.com",
+  "phone": "8460794821",
+  "password": "$2b$10$dYoA71Rv/119oNXobTBRzuihJZAGbChGVTEyffftfZesySMvejh52",
+  "createdAt": {
+    "$date": "2025-03-07T05:15:19.736Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-07T05:15:19.736Z"
+  },
+  "__v": 0
+}]

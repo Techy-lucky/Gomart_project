@@ -1,0 +1,47 @@
+/* Profile container animation */
+.profile-container.rounded-2xl {
+  animation: slideUp 1s ease-out;
+}
+
+/* Profile image hover effect */
+.profile-avatar.rounded-full {
+  transition: transform 0.3s ease;
+}
+
+.profile-avatar.rounded-full:hover {
+  transform: scale(1.1);
+}
+
+/* Button hover animations */
+.edit-profile-btn,
+.order-history-btn {
+  transition: all 0.3s ease;
+}
+
+.edit-profile-btn:hover,
+.order-history-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Profile fields hover effect */
+.profile-field.bg-white\/40 {
+  transition: all 0.3s ease;
+}
+
+.profile-field.bg-white\/40:hover {
+  transform: translateX(5px);
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Keyframes for slide up animation */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

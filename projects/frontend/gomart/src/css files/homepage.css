@@ -1,0 +1,26 @@
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+[name="homepage-container"] {
+  animation: fadeInUp 0.6s ease-out;
+  animation-fill-mode: both;
+}
+
+[name="content-wrapper"] {
+  animation: fadeInUp 0.8s ease-out;
+  animation-fill-mode: both;
+}
+
+[name="main-content"] {
+  animation: fadeInUp 1s ease-out;
+  animation-fill-mode: both;
+}
+

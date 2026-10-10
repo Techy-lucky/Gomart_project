@@ -1,0 +1,106 @@
+/* Admin Profile container animation */
+.admin-profile-container {
+  animation: slideFromRight 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Admin avatar hover effect */
+.admin-avatar {
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  animation: slideFromRight 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.admin-avatar:hover {
+  transform: scale(1.1);
+}
+
+/* Admin profile fields hover effect */
+.profile-field {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  animation: slideFromRight 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  animation-fill-mode: both;
+}
+
+.profile-field:hover {
+  transform: translateX(5px);
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Admin illustration hover effect */
+.admin-illustration {
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  animation: slideFromRight 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.admin-illustration:hover {
+  transform: scale(1.05);
+}
+
+/* Admin info text hover effect */
+.admin-info:hover .admin-heading,
+.admin-info:hover .admin-subheading {
+  color: #2563eb;
+  transition: color 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Keyframes for animations */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideFromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideToRight {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}

@@ -1,0 +1,67 @@
+/* Admin dashboard container animation */
+.admin-dashboard-wrapper {
+  animation: slideUp 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Admin cards hover effects */
+.admin-analytics-card,
+.admin-orders-card,
+.admin-products-card,
+.admin-customers-card,
+.admin-settings-card,
+.admin-support-card {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  animation: slideFromRight 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  animation-delay: calc(var(--order) * 100ms);
+  animation-fill-mode: both;
+}
+
+.admin-analytics-card:hover,
+.admin-orders-card:hover,
+.admin-products-card:hover,
+.admin-customers-card:hover,
+.admin-settings-card:hover,
+.admin-support-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+/* Welcome title animation */
+.admin-welcome-title {
+  animation: slideFromLeft 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Keyframes animations */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

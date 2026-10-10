@@ -1,0 +1,74 @@
+/* Fade in animation for the main container */
+.welcome-container {
+  animation: fadeIn 1.2s ease-in;
+}
+
+/* Slide up animation for the image */
+.welcome-image {
+  animation: slideUp 1s ease-out;
+}
+
+/* Scale animation for heading */
+.welcome-heading {
+  animation: scaleIn 0.8s ease-out;
+}
+
+/* Button hover effects */
+.welcome-login-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.welcome-register-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+/* Keyframes definitions */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Additional hover effects */
+.welcome-subtext {
+  transition: color 0.3s ease;
+}
+
+.welcome-subtext:hover {
+  color: #000;
+}
+
+/* Smooth transitions for all elements */
+* {
+  transition: all 0.3s ease-in-out;
+}
+

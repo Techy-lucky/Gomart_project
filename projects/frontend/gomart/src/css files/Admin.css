@@ -1,0 +1,109 @@
+.admin-container {
+    /* background: linear-gradient(135deg, #f6f8ff 0%, #e9f0ff 100%); */
+    animation: fadeIn 0.5s ease-in;
+    max-width: 1200px; /* Added max-width */
+    margin: 0 auto; /* Center the container */
+}
+
+.admin-card {
+    /* background: rgba(255, 255, 255, 0.9); */
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    transform: translateY(20px);
+    animation: slideUp 0.7s ease-out forwards;
+    max-width: 900px; /* Added max-width */
+    margin: 0 auto; /* Center the card */
+    padding: 1rem; /* Added padding */
+    border-radius: 20px;
+}
+
+.admin-image-section {
+    background: linear-gradient(135deg, #4f46e5 0%, #3b82f6 100%);
+    animation: slideInLeft 0.8s ease-out;
+    width: 90%; /* Reduced width */
+    max-width: 500px; /* Added max-width */
+    margin: 0 auto; /* Center the section */
+    border-radius: 10px;
+}
+
+.admin-image {
+    animation: float 3s ease-in-out infinite;
+    max-width: 300px; /* Added max-width */
+    width: 100%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.admin-form-section {
+    animation: fadeIn 0.8s ease-out;
+    width: 90%; /* Reduced width */
+    max-width: 450px; /* Added max-width */
+    margin: 0 auto; /* Center the section */
+}
+
+.admin-input {
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid #e5e7eb;
+    transition: all 0.3s ease;
+    width: 100%; /* Make inputs full width */
+    max-width: 450px; /* Added max-width */
+    
+}
+
+.admin-input:focus {
+    border-color: #4f46e5;
+    box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.1);
+}
+
+.admin-button {
+    background: linear-gradient(135deg, #4f46e5 0%, #3b82f6 100%);
+    transform: translateY(0);
+    transition: all 0.3s ease;
+    width: 100%; /* Make button full width */
+    max-width: 400px; /* Added max-width */
+}
+
+.admin-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(79, 70, 229, 0.2);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+.glass-effect {
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    max-width: 800px; /* Added max-width */
+    margin: 0 auto; /* Center the element */
+} 

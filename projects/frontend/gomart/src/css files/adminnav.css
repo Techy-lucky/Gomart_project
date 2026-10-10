@@ -1,0 +1,89 @@
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+nav {
+  animation: fadeInLeft 0.3s ease-in-out;
+  animation-fill-mode: both;
+}
+
+[name="navbar-container"] {
+  animation: fadeInLeft 0.4s ease-in-out;
+  animation-fill-mode: both;
+}
+
+[name="navbar-content"] {
+  animation: fadeInLeft 0.5s ease-in-out;
+  animation-fill-mode: both;
+}
+
+/* Hover effects */
+[name="navbar-content"] a {
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+
+[name="navbar-content"] a:hover {
+  transform: translateX(5px);
+}
+
+[name="navbar-content"] img {
+  transition: transform 0.2s ease-in-out;
+}
+
+[name="navbar-content"] a:hover img {
+  transform: scale(1.1) rotate(5deg);
+}
+
+[name="navigation-links"] {
+  transition: opacity 0.2s ease-in-out;
+}
+
+[name="navigation-links"]:hover {
+  opacity: 0.9;
+}
+
+
+/* Hide navbar on small screens */
+/* @media (max-width: 768px) {
+  .admin-navbar {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 100vh;
+    width: 64px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-blur: 10px;
+    border-right: 1px solid rgba(200, 200, 200, 0.4);
+    transition: left 0.3s ease-in-out;
+  }
+
+  .admin-navbar.open {
+    left: 0;
+  }
+
+
+  .toggle-btn {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 100;
+  }
+
+  .toggle-btn:hover {
+    background-color: rgba(0, 0, 0, 1);
+  }
+} */

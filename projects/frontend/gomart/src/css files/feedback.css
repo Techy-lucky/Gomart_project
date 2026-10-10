@@ -1,0 +1,120 @@
+.feedback-container {
+    animation: fadeIn 0.5s ease-out;
+}
+
+.feedback-form {
+    animation: slideUp 0.6s ease-out;
+}
+
+.feedback-form__group {
+    animation: slideUp 0.7s ease-out;
+}
+
+.feedback-form__input,
+.feedback-form__textarea {
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.feedback-form__input:focus,
+.feedback-form__textarea:focus {
+    border-color: rgba(59, 130, 246, 0.5);
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.25);
+}
+
+.feedback-form__star {
+    animation: bounce 0.5s ease-out;
+}
+
+.feedback-form__star:hover {
+    transform: scale(1.2);
+}
+
+.feedback-form__submit {
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.feedback-form__submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.25);
+}
+
+.feedback-form__submit:active {
+    transform: translateY(0);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 640px) {
+    .feedback-container {
+        padding: 1rem;
+        height: auto;
+        min-height: 90vh;
+    }
+
+    .feedback-form {
+        padding: 0;
+    }
+
+    .feedback-form__stars {
+        justify-content: center;
+    }
+
+    .feedback-form__star {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+    .feedback-form {
+        padding: 0 2rem;
+    }
+}
+
+/* Custom Scrollbar */
+.feedback-form__textarea::-webkit-scrollbar {
+    width: 6px;
+}
+
+.feedback-form__textarea::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.feedback-form__textarea::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 3px;
+}
+
+.feedback-form__textarea::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}

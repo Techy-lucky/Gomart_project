@@ -1,0 +1,157 @@
+/* Smooth transitions for form elements */
+.productupload-input,
+.productupload-select,
+.productupload-textarea,
+.productupload-add-btn,
+.productupload-remove-btn {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover effects for form elements */
+.productupload-input:hover,
+.productupload-select:hover,
+.productupload-textarea:hover {
+  border-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.productupload-input:focus,
+.productupload-select:focus, 
+.productupload-textarea:focus {
+  outline: none;
+  border-color: #22c55e;
+  box-shadow: 0 0 5px rgba(34, 197, 94, 0.3);
+}
+
+/* Button animations */
+.productupload-add-btn,
+.productupload-remove-btn {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.productupload-add-btn:hover,
+.productupload-remove-btn:hover {
+  transform: translateY(-2px);
+}
+
+.productupload-add-btn:active,
+.productupload-remove-btn:active {
+  transform: translateY(0);
+}
+
+/* Add/Remove category/subcategory animations */
+.productupload-category-item,
+.productupload-subcategory-item {
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Slide animation */
+@keyframes slide {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.productupload-slide-animation {
+  animation: slide 0.5s ease-out forwards;
+}
+
+/* Slide right animation */
+.productupload-slide-right {
+  animation: slideRight 0.5s ease-out;
+}
+
+@keyframes slideRight {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Slide left animation */
+.productupload-slide-left {
+  animation: slideLeft 0.5s ease-out;
+}
+
+@keyframes slideLeft {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Smooth scrolling for overflow containers */
+.productupload-category-list,
+.productupload-subcategory-list {
+  scroll-behavior: smooth;
+}
+
+/* Form container animations */
+.productupload-left-column,
+.productupload-right-column {
+  animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Image upload hover effect */
+.productupload-image-upload {
+  transition: all 0.3s ease;
+}
+
+.productupload-image-upload:hover {
+  background-color: rgba(243, 244, 246, 0.8);
+  border-color: #22c55e;
+}
+
+/* Upload button pulse animation */
+.productupload-submit-btn {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(34, 197, 94, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(34, 197, 94, 0);
+  }
+}

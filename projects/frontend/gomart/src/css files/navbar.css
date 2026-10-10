@@ -1,0 +1,96 @@
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+nav {
+  animation: fadeInDown 0.3s ease-in-out;
+  animation-fill-mode: both;
+}
+
+[name="navbar-container"] {
+  animation: fadeInDown 0.4s ease-in-out;
+  animation-fill-mode: both;
+}
+
+[name="navbar-content"] {
+  animation: fadeInDown 0.5s ease-in-out;
+  animation-fill-mode: both;
+}
+
+/* Hover effects */
+[name="logo-section"] img {
+  transition: transform 0.15s ease-in-out;
+}
+
+[name="logo-section"] img:hover {
+  transform: scale(1.05);
+}
+
+[name="navigation-links"] a {
+  position: relative;
+  overflow: hidden;
+}
+
+[name="navigation-links"] a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: #4B5563;
+  transition: all 0.2s ease-in-out;
+  transform: translateX(-50%);
+}
+
+/* [name="navigation-links"] a:hover::after {
+  width: 80%;
+} */
+
+[name="navigation-links"] img {
+  transition: transform 0.15s ease-in-out;
+}
+
+[name="navigation-links"] a:hover img {
+  transform: scale(1.1);
+}
+
+@media (max-width: 640px) {
+  .desktop-menu {
+      display: none;
+  }
+
+  .mobile-menu {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 10px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 1rem;
+      width: 200px;
+  }
+
+  .mobile-menu a {
+      padding: 0.5rem;
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: #333;
+      transition: background 0.2s;
+  }
+
+  .mobile-menu a:hover {
+      background: #f0f0f0;
+  }
+}
+

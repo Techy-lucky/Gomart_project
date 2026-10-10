@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('./images/img/199085-final.jpeg');
+  /* background-color: white; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+html{
+  cursor: url('./images/cursor/arrow1.svg'), auto;
+  /* cursor: url('./images/cursor/close-outline.svg'), auto; */
+  /* cursor: url('./images/cursor/circle.svg'), auto; */
+  /* cursor: url('./images/cursor/hand-pointer.svg'), auto; */
+  /* cursor: url('./images/cursor/hourglass-outline.svg'), auto; */
+  /* cursor: url('./images/cursor/lightning-bolt-outline.svg'), auto; */
+  /* cursor: url('./images/cursor/lock-outline.svg'), auto; */
+  /* cursor: url('./images/cursor/plus-outline.svg'), auto; */
+  /* cursor: url('./images/cursor/thumbs-up.svg'), auto; */
+  scroll-behavior: smooth;
+}
+
+
+@media (max-width: 768px) {
+ body{
+  overflow: auto;
+ }
+}
+
+/* :root {
+    --text-color: #ffffff;
+}
+
+body {
+    color: var(--text-color);
+    transition: color 0.3s ease;
+} */
